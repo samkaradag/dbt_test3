@@ -1,0 +1,41 @@
+[0m22:44:21.007341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038edd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10465fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10465fc50>]}
+
+
+============================== 22:44:21.010000 | 61645ef6-2ef2-4676-9a99-984409ef8508 ==============================
+[0m22:44:21.010000 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:44:21.010238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test3/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt compile --models stg_ecommerce_data', 'send_anonymous_usage_stats': 'True'}
+[0m22:44:21.011554 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'default'
+[0m22:44:21.021283 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.04235054, "process_in_blocks": "0", "process_kernel_time": 0.094999, "process_mem_max_rss": "100941824", "process_out_blocks": "0", "process_user_time": 0.459599}
+[0m22:44:21.021449 [debug] [MainThread]: Command `dbt compile` failed at 22:44:21.021413 after 0.04 seconds
+[0m22:44:21.021587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104567820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104691250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044db020>]}
+[0m22:44:21.021713 [debug] [MainThread]: Flushing usage events
+[0m22:44:21.475350 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:03.516481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e95d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bffb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bffc50>]}
+
+
+============================== 22:45:03.518894 | f654571a-be5b-4945-9871-054a9a228e2f ==============================
+[0m22:45:03.518894 [info ] [MainThread]: Running with dbt=1.9.4
+[0m22:45:03.519121 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test3', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/sametkaradag/Git/dagen/dagen/dagen-app/backend/agent-framework-backend/knowledge_base/workspace_6/dbt/dbt_test3/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt compile --models stg_ecommerce_data', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:45:04.183518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f654571a-be5b-4945-9871-054a9a228e2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7029e0>]}
+[0m22:45:04.202356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f654571a-be5b-4945-9871-054a9a228e2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b567ac0>]}
+[0m22:45:04.202612 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:45:04.278761 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m22:45:04.279094 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:45:04.279228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f654571a-be5b-4945-9871-054a9a228e2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b918250>]}
+[0m22:45:04.630212 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two sources with the name "_".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for source("", "").
+  
+  To fix this, change the name of one of these resources:
+  - source.dbt_test3.. (models/sources/sources.yml)
+  - source.dbt_test3.. (models/sources/sources.yml)
+[0m22:45:04.632698 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 1.1404216, "process_in_blocks": "0", "process_kernel_time": 0.199635, "process_mem_max_rss": "214941696", "process_out_blocks": "0", "process_user_time": 1.112926}
+[0m22:45:04.632882 [debug] [MainThread]: Command `dbt compile` failed at 22:45:04.632844 after 1.14 seconds
+[0m22:45:04.633038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b965220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045a3d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bf3e70>]}
+[0m22:45:04.633159 [debug] [MainThread]: Flushing usage events
+[0m22:45:05.360738 [debug] [MainThread]: An error was encountered while trying to flush usage events

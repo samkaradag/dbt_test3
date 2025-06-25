@@ -1,0 +1,31 @@
+
+            with
+        
+            stg__data as (
+                select * from {{ ref('stg_') }}
+            ),
+            
+            stg__data as (
+                select * from {{ ref('stg_') }}
+            ),
+            
+            stg__data as (
+                select * from {{ ref('stg_') }}
+            ),
+            
+            stg__data as (
+                select * from {{ ref('stg_') }}
+            )
+            
+            
+        -- Add your transformations here
+        final as (
+            select 
+                -- Add transformed columns
+                *
+            from stg__data
+            -- Add joins to other staging models if needed
+        )
+        
+        select * from final
+        

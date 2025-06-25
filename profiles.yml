@@ -1,0 +1,10 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: prd-dagen
+      dataset: dbt_dataset
+      threads: 1
+      timeout_seconds: 300
